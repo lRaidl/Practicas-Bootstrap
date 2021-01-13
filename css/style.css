@@ -19,3 +19,48 @@ footer a:hover{
     color: rgba(255, 251, 0, 0.986);
 }
 
+nav ul {
+    margin-left: auto;
+}
+
+#main .carousel-inner img{
+    max-height: 60vh;
+    object-fit: cover;
+
+    
+}
+
+#carousel{
+    z-index: 1;
+    position:relative;
+}
+
+#carousel .overlay{
+    z-index: 2; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+   
+}
+
+#carousel .overlay .col-xs{
+    text-align: center;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row{
+height: 100%;
+}
+
+#carousel h1, p{
+    width: 80%;
+    margin-left: auto;
+}
+
+#carousel col h1{
+    text-align: center;
+   
+
