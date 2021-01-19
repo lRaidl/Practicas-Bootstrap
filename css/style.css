@@ -46,21 +46,13 @@ nav ul {
    
 }
 
-#carousel .overlay .col-xs{
-    text-align: center;
-}
 
 #carousel .overlay .container,
 #carousel .overlay .row{
 height: 100%;
 }
 
-#carousel h1, p{
-    width: 80%;
-    margin-left: auto;
+#carousel .overlay .container{
+    width: 100%;
 }
-
-#carousel col h1{
-    text-align: center;
-   
 

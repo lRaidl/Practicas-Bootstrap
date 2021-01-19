@@ -8,9 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="JS/index.js"></script>
     <title>Hello, world!</title>
-  </head>
-  <body>
+
+    </head>
+  <body data-spy="scroll" data-target="navbar">
 
      <!-- HEADER -->
     <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
@@ -28,29 +30,23 @@
                         <a class="nav-link" href="#main">Main</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hola</a> 
+                        <a class="nav-link" href="#speackers">Oradores</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hola</a> 
+                        <a class="nav-link" href="#tyd">Lugar</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hola</a> 
+                        <a class="nav-link" href="#orador">Vuelvete un orador</a> 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hola</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hola</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hola</a> 
-                    </li>
+       
 
                 </ul>
             </div>
         </div>
     </nav>
     <!-- /HEADER -->
+
+
 
 
     <!-- MAIN -->
@@ -70,23 +66,154 @@
             <div class="overlay">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col col-md-6 offset-md-6 text-xs-center" style="color: white; ;">
-                            <h1 text-xs-center>FacilPos Conf Bogota</h1> <br></br>
-                            <p class="d-none d-md-block">¡Por primera vez llega a la ciudad de Bogota FacilPos Conf! Un evento para compartir
+                        <div class="col text-center" style="color: white;">
+                            <h1 >FacilPos Conf Bogota</h1> <br></br>
+                            <p class="d-none d-md-block text-center" >¡Por primera vez llega a la ciudad de Bogota FacilPos Conf! Un evento para compartir
                                 con nuestra comunidad el conocimiento y experiencia de nuestros mejores expertos en el
                                 area de ventas y servicios. Ven a conocer la manera en que puedes hacer crecer tu negocio
                                 al tiempo que llevas un orden perfecto de todo lo que ocurre en tu empresa.
                             </p>
+                            <button type="button" class="btn btn-outline-info">Más Información</button>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#compra">Comprar Entradas</button>
                             </div>
                     </div>
                 </div>
+
+
+           
             </div>
             </div>
     </main>
     <!-- /MAIN -->
 
+    <!-- MODAL -->
+    <div class="modal fade" id="compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /MODAL -->
+      
+    <!-- SPEAKERS -->
+    <section id="speackers">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-uppercase mt-4">
+                    <small>Conoce a los</small>
+                    <h2>Oradores</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4 mb-4" >
+                    <div class="card" style="">
+                        <img src="https://sm.ign.com/t/ign_latam/screenshot/default/boruto_bj3e.1280.jpg" style="height: 312px;" class="card-img-top" alt="Naruto Uzumaki">
+                        <div class="card-body">
+                            <div style="text-align: right;">
+                                <span class="badge bg-dark">Jinchuriki</span>
+                                <span class="badge bg-danger">Hokage</span>
+                            </div>
+                            <h4>Naruto Uzumaki</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card" style="">
+                        <img src="https://static.wikia.nocookie.net/naruto/images/c/cf/Kakashi_Hatake_Parte_III_Anime.png/revision/latest?cb=20170628190454&path-prefix=es" style="height: 312px;" class="card-img-top" alt="Naruto Uzumaki">
+                        <div class="card-body">
+                            <div style="text-align: right;">
+                                <span class="badge bg-secondary">Anbu</span>
+                                <span class="badge bg-danger">Hokage</span>
+                            </div>
+                            <h4>Kakashi Hatake</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card" style="">
+                        <img src="https://static.wikia.nocookie.net/narutoinuyashapokemnyharrypotter/images/9/9c/Tsunade.png/revision/latest/scale-to-width-down/340?cb=20121231140049&path-prefix=es" style="height: 312px;" class="card-img-top" alt="Naruto Uzumaki">
+                        <div class="card-body">
+                            <div style="text-align: right;">
+                                <span class="badge bg-success">Sannin</span>
+                                <span class="badge bg-danger">Hokage</span>
+                            </div>
+                            <h4>Tsunade Senju</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- /SPEAKERS -->
 
+    <!-- TIME & DATE-->
+    <section id="tyd">
+        <div class="container-fluid ">
 
+            
+            <div class="row">
+                <div class="col-12 col-lg-6 p-0">
+                    <img src="https://i.ytimg.com/vi/KHz1Q5TQh2c/maxresdefault.jpg" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-12 col-lg-6 pt-4 pb-4" style="background: #0d6efd; color: white;">
+                    <h2> LA GRAN CAPITAL</h2>
+                    <small style="font-size: 18px;">Bogotá, oficialmente Bogotá Distrito Capital (antiguamente llamada Santafé de Bogotá),
+                        junto con los treinta y dos departamentos forman la República de Colombia. 
+                        Es la capital de Colombia y del departamento de Cundinamarca. Está administrada como Distrito capital,
+                         y goza de autonomía para la gestión de sus intereses dentro de los límites de la Constitución y la ley.
+                         A diferencia de los demás distritos de Colombia, Bogotá es una entidad territorial de primer orden, 
+                         con las atribuciones administrativas que la ley confiere a los departamentos.​ Está constituida por 
+                          localidades y es el epicentro político, económico, administrativo, industrial, artístico, cultural, deportivo y turístico del país.</small>
+                          <p></p>
+                          <button type="button" class="btn btn-outline-dark">Conoce más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /TIME & DATE-->
+    <!-- ORA-->
+    <section id="orador">
+        <div class="container">
+            <div class="col-12 text-center text-uppercase mt-4">
+                <small>postulate como</small>
+                <h2>orador</h2>
+            </div>
+            <div class="row pt-4 pb-4">
+                <div class="col">
+                    <div class="mb">
+                        <label for="exampleFormControlInput1" class="form-label">Nnombres y apelldos</label>
+                        <input type="email" class="form-control"   id="exampleFormControlInput1" placeholder="Ricardo Ejemplo Garcia Rivera">
+                    </div>
+                    <div>
+                        <label for="exampleFormControlInput1"  class="form-label">Correo electronica</label>
+                        <input type="email" class="form-control"  id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escribe sobre lo que deseas hablar</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <button type="button" class="btn btn-primary mt-4">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /ORA -->
     <!-- FOOTER -->
 
     <footer>
